@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div>
+                <strong>Demo1 Component</strong>
+            </div>
+            <div class="image">
+                <img [src] = "imgUrl" >
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <h4>Select Quantity = </h4>
+                <input [(ngModel)]="count">
+            </div>
+            <div>
+                <h4>Price = {{count}} X 5000 </h4>
+                <h4> {{total}} </h4>
+                <button (click) = "total_price()">Price</button> 
+            </div>
+        </div>
+        <div class="col-md-5">
+            <app-demo2 (childEvent)="count=$event" [appData] = "name" ></app-demo2>
+        </div>
+    </div>    
+    
+</div>

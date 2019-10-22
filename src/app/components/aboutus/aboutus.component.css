@@ -1,0 +1,18 @@
+.headings{
+    font-size: 250%;
+    text-shadow: 50px;
+    color: brown;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.frame{
+    margin-left: 300px;
+    margin-right: 300px;
+    overflow-x: hidden;
+}
+
+.description{
+    text-justify: auto;
+}

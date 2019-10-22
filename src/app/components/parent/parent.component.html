@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <div>
+                <strong>Parent Component</strong>
+            </div>
+            <div>
+                <strong>{{message}}</strong>
+            </div>            
+        </div>
+        <div class="col-md-5">
+            <app-child (childEvent)="message=$event" [parentData] = "name"></app-child>
+        </div>
+    </div>
+</div>
+    
+
+
