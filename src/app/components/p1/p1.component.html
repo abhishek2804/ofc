@@ -1,0 +1,13 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+             <h4>P1 Component</h4>   
+             <h2> {{onfireEvent}} </h2>
+        </div>
+        <div class="col-md-6">
+            <app-p2 (childEvent) = "onfireEvent = $event" [name] = "appData"></app-p2>
+        </div>
+    </div>
+</div>

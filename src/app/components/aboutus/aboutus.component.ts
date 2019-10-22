@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutusComponent implements OnInit {
 
-  imgurl = "https://picsum.photos/id/237/200/300"
+  imgurl = "https://picsum.photos/id/237/1600/700"
   constructor() { }
 
   ngOnInit() {

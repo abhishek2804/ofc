@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { ListService } from './services/list.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { MatSliderModule, MatCardModule, MatButtonModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
@@ -18,6 +19,8 @@ import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
 import { Demo1Component } from './components/demo1/demo1.component';
 import { Demo2Component } from './components/demo2/demo2.component';
+import { P1Component } from './components/p1/p1.component';
+import { P2Component } from './components/p2/p2.component';
 
 
 @NgModule({
@@ -32,7 +35,9 @@ import { Demo2Component } from './components/demo2/demo2.component';
     ParentComponent,
     ChildComponent,
     Demo1Component,
-    Demo2Component
+    Demo2Component,
+    P1Component,
+    P2Component
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { Demo2Component } from './components/demo2/demo2.component';
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
-    FormsModule 
+    FormsModule,
+    AngularFontAwesomeModule 
   ],
   providers: [ListService],
   bootstrap: [AppComponent]

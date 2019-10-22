@@ -7,6 +7,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { Demo1Component } from './components/demo1/demo1.component';
+import { P1Component } from './components/p1/p1.component';
 
 
 const routes: Routes = [
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path:'demo1',
     component: Demo1Component
+  },
+  {
+    path:'p1',
+    component: P1Component
   },
   {
     path:'**', 
