@@ -1,21 +1,64 @@
-<strong>HOME COMPONENT</strong>
-    <div class="row">
-        <div class="col-mad-4">
-                <h4>Cars</h4>
-                <i class="fa fa-car" style="font-size:30px;color:red;"></i>
-        </div>
-           
+
+<div class=" pull-left">
+ 
+    <div class="heading">
+        <strong>HOME COMPONENT</strong>
     </div>
+ 
+    <div class="row">
+        <div class="col-lg-6">
+                <strong>Cars </strong> 
+                <i class="fa fa-car" style="font-size:20px;color:red;"></i>
+                <div class="logo-nissan">
+                    <h4>NISSAN</h4> 
+                </div>
+                    <div class="logo" style="margin-top: 10px;">
+                        <img src="../../../assets/nissan-logo-png.jpg" alt="Smiley face" height="70" width="70">
+                    </div>
+                       
+                
+                <div class="logo-volkswagen" style="margin-top: 50px;">
+                    <h4>Volkswagen</h4> 
+                </div>
+                <div class="logo">
+                    <img src="../../../assets/Volksvagon.jpg" alt="Smiley face" height="70" width="70">
+                </div>
+                       
+                
+                <div class="logo-volvo" style="margin-top: 50px;">
+                    <h4>VOLVO</h4> 
+                </div>
+                    <div class="logo">
+                        <img src="../../../assets/Volvo logo.jpg" alt="Smiley face" height="70" width="70">
+                    </div>
+                      
+                
+                <div class="logo-mini" style="margin-top: 50px;">
+                    <h4>MINI</h4> 
+                </div>
+                    <div class="logo">
+                        <img src="../../../assets/mini logo.jpg" alt="Smiley face" height="70" width="70">
+                    </div>
+                     
+                
+                
+        </div>
 
-<div class="image">
-    <img [src]="imgurl">
+        <div class="col-lg-6">
+                <div>
+                        <img [src]="imgurl">
+                </div>
+                <div>
+                    <strong>List of Colors:</strong>
+                </div>
+                <div *ngFor = "let color of colors">
+                    <strong> {{color}} </strong>    
+                </div>
+        </div>
+    </div>
 </div>
 
-<div><strong>List of Colors:</strong></div>
-<div *ngFor = "let color of colors">
-<strong> {{color}} </strong>    
 
-</div>
 
 
 

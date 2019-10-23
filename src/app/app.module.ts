@@ -11,6 +11,9 @@ import { ListService } from './services/list.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
 
 import { MatSliderModule, MatCardModule, MatButtonModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
@@ -21,6 +24,8 @@ import { Demo1Component } from './components/demo1/demo1.component';
 import { Demo2Component } from './components/demo2/demo2.component';
 import { P1Component } from './components/p1/p1.component';
 import { P2Component } from './components/p2/p2.component';
+import { ColorsComponent } from './components/colors/colors.component';
+
 
 
 @NgModule({
@@ -37,7 +42,8 @@ import { P2Component } from './components/p2/p2.component';
     Demo1Component,
     Demo2Component,
     P1Component,
-    P2Component
+    P2Component,
+    ColorsComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +55,9 @@ import { P2Component } from './components/p2/p2.component';
     MatMenuModule,
     MatToolbarModule,
     FormsModule,
-    AngularFontAwesomeModule 
+    AngularFontAwesomeModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule 
   ],
   providers: [ListService],
   bootstrap: [AppComponent]

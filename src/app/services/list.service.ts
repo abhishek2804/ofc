@@ -5,11 +5,16 @@ import { Injectable } from '@angular/core';
 })
 export class ListService {
 
-  color=['RED','BLUE','WHITE','YELLOW']
+  colors=[
+    'RED',
+    'BLUE',
+    'WHITE',
+    'YELLOW'
+  ]
 
   constructor() { }
 
   getColor(){
-    return this.color;
+    return this.colors;
   }
 }

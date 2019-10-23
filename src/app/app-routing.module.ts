@@ -8,6 +8,7 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { Demo1Component } from './components/demo1/demo1.component';
 import { P1Component } from './components/p1/p1.component';
+import { ColorsComponent } from './components/colors/colors.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,10 @@ const routes: Routes = [
   {
     path:'p1',
     component: P1Component
+  },
+  {
+    path:'colors',
+    component: ColorsComponent
   },
   {
     path:'**', 
